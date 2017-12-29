@@ -25,7 +25,7 @@ RUN echo "source /data/toolchain/emsdk/emsdk_env.sh --build=Release" >> ~/.bashr
 
 RUN mkdir -p /data/project
 
-VOLUME [ "/data/project" ]
+VOLUME [ "/data/project", "/root/.emscripten_cache" ]
 
 WORKDIR /data/project
 
